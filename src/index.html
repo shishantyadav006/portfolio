@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shishant | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+  
+  .fade-up {
+    animation: fadeUp 1s ease-out both;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+
+</head>
+
+<body class="bg-slate-950 text-slate-100 font-sans">
+
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between px-6 py-4 border-b border-gray-700">
+    <h1 class="text-xl font-bold text-blue-400">Shishant</h1>
+
+    <div class="space-x-6 text-slate-400">
+      <a href="#about" class="hover:text-white">About</a>
+      <a href="#projects" class="hover:text-white">Projects</a>
+      <a href="#contact" class="hover:text-white">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+<section class="min-h-[75vh] flex items-center justify-center px-6">
+
+  <div
+    class="flex flex-col md:flex-row items-center justify-center gap-12 w-full max-w-6xl mx-auto"
+  >
+
+    <!-- Text -->
+    <div class="text-center md:text-left max-w-xl">
+
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+        Hi, I’m <span class="text-blue-400">Shishant</span>
+      </h2>
+
+      <p class="text-gray-400 mb-6 leading-relaxed">
+         Engineering student with strong skills in Python, C, and Web Development.
+      Passionate about building efficient, user-friendly applications and
+      continuously improving through real-world projects.
+      </p>
+
+      <!-- Buttons -->
+      <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+
+        <a
+          href="#projects"
+          class="px-6 py-2 bg-blue-500 hover:bg-blue-600 hover:scale-105 transition-all duration-300 rounded"
+        >
+          View Projects
+        </a>
+
+        <a
+          href="#contact"
+          class="px-6 py-2 bg-blue-500 hover:bg-blue-600 hover:scale-105 transition-all duration-300 rounded"
+        >
+          Contact Me
+        </a>
+
+        <button
+          onclick="openForm()"
+          class="px-6 py-2 bg-blue-500 hover:bg-blue-600 hover:scale-105 transition-all duration-300 rounded"
+        >
+          Download Resume
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- Photo -->
+    <div class="flex justify-center w-full md:w-auto">
+      <img
+        src="assets/image.jpg"
+        alt="Profile photo"
+        class="w-52 h-52 md:w-64 md:h-64 rounded-full object-cover border-4 border-blue-400 shadow-lg"
+      />
+    </div>
+
+  </div>
+
+</section>
+<!-- Quick Info -->
+<section class="bg-slate-900 py-6">
+
+  <div class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 text-center gap-6 text-slate-300">
+
+    <div>
+      <h3 class="text-xl font-bold text-blue-400">Student</h3>
+      <p>B.Tech CSE (Engineering)</p>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-bold text-blue-400">Focus</h3>
+      <p>Web Devlopment and  Machine Learning </p>
+    </div>
+
+    <div>
+      <h3 class="text-xl font-bold text-blue-400">Goal</h3>
+      <p>Software Developer </p>
+    </div>
+
+  </div>
+
+</section>
+<!-- About -->
+<section id="about" class="px-6 py-16 max-w-4xl mx-auto fade-up">
+
+  <h2 class="text-3xl font-bold mb-6 text-blue-400">About Me</h2>
+
+  <p class="text-gray-300 leading-relaxed">
+    I am an engineering student passionate about web development and software
+    engineering. I enjoy building clean interfaces and improving my skills
+    through hands-on projects.
+  </p>
+
+</section>
+
+  <!-- Skills -->
+  <section class="px-6 pb-20 max-w-4xl mx-auto">
+
+    <h3 class="text-2xl font-semibold mb-4">Skills</h3>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4">
+
+      <span class="px-4 py-2 bg-gray-800 rounded text-center">HTML</span>
+      <span class="px-4 py-2 bg-gray-800 rounded text-center">CSS</span>
+      <span class="px-4 py-2 bg-gray-800 rounded text-center">Tailwind</span>
+      <span class="px-4 py-2 bg-gray-800 rounded text-center">JavaScript</span>
+      <span class="px-4 py-2 bg-gray-800 rounded text-center">Python</span>
+      <span class="px-4 py-2 bg-gray-800 rounded text-center">C</span>
+     
+
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="px-6 py-16 bg-slate-900 fade-up">
+
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+  <!-- Project 1 -->
+  <div class="bg-slate-900 border border-slate-800 rounded-lg p-6 shadow
+hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300">
+    <h3 class="text-xl font-semibold mb-2">Library Management System</h3>
+
+    <p class="text-slate-300 mb-4">
+      Developed a system to manage book records, student details, and issue/return
+      operations using file handling.
+    </p>
+
+    <p class="text-sm text-gray-500">
+      Tech Used: Python, File Handling
+    </p>
+
+    <p class="text-sm text-green-400 mt-2">
+      ✔ Improved understanding of data management
+    </p>
+  </div>
+
+  <!-- Project 2 -->
+  <div class="bg-slate-900 border border-slate-800 rounded-lg p-6 shadow
+hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300">
+    <h3 class="text-xl font-semibold mb-2">AI Text & PDF Summarizer</h3>
+
+    <p class="text-slate-300 mb-4">
+      Built an application to summarize long text and PDF documents using
+      Natural Language Processing techniques.
+    </p>
+
+    <p class="text-sm text-gray-500">
+      Tech Used: Python, NLP
+    </p>
+
+    <p class="text-sm text-green-400 mt-2">
+      ✔ Learned practical use of machine learning models
+    </p>
+  </div>
+
+  <!-- Project 3 -->
+  <div class="bg-slate-900 border border-slate-800 rounded-lg p-6 shadow
+hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300">
+    <h3 class="text-xl font-semibold mb-2">Password Strength Checker</h3>
+
+    <p class="text-slate-300 mb-4">
+      Created a desktop-based tool to analyze password security and provide
+      strength suggestions to users.
+    </p>
+
+    <p class="text-sm text-gray-500">
+      Tech Used: Python, Tkinter
+    </p>
+
+    <p class="text-sm text-green-400 mt-2">
+      ✔ Enhanced GUI development skills
+    </p>
+  </div>
+
+</div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="px-6 py-20 max-w-4xl mx-auto">
+
+    <h2 class="text-3xl font-bold mb-6 text-blue-400">Contact</h2>
+
+    <p class="text-gray-300 mb-4">
+  📧 Email:
+  <a
+    href="mailto:yourname@gmail.com"
+    class="text-blue-400 hover:underline"
+  >
+    shishantyadav9636@gmail.com
+  </a>
+</p>
+
+   <p class="text-gray-300">
+  💻 GitHub:
+  <a
+    href="https://github.com/yourusername"
+    target="_blank"
+    class="text-blue-400 hover:underline"
+  >
+    github.com/shishantyadav006
+  </a>
+</p>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 border-t border-gray-700 text-gray-400">
+    © 2026 Shishant. All rights reserved.
+  </footer>
+  <!-- Resume Form Popup -->
+<div
+  id="resumeForm"
+  class="fixed inset-0 bg-black bg-opacity-70 hidden items-center justify-center z-50"
+>
+
+  <div class="bg-slate-900 border border-slate-800 rounded-lg p-6 shadow
+hover:shadow-blue-500/20 hover:-translate-y-2 transition-all duration-300">
+
+    <h3 class="text-xl font-bold mb-4 text-blue-400">
+      Download Resume
+    </h3>
+
+    <input
+      id="visitorName"
+      type="text"
+      placeholder="Your Name"
+      class="w-full mb-3 px-3 py-2 rounded bg-gray-800 text-white"
+    >
+
+    <input
+      id="visitorEmail"
+      type="email"
+      placeholder="Your Email"
+      class="w-full mb-4 px-3 py-2 rounded bg-gray-800 text-white"
+    >
+
+    <div class="flex justify-between">
+
+      <button
+        onclick="closeForm()"
+        class="px-4 py-2 border border-gray-500 rounded"
+      >
+        Cancel
+      </button>
+
+      <button
+        onclick="downloadResume()"
+        class="px-4 py-2 bg-green-500 rounded text-white"
+      >
+        Download
+      </button>
+
+    </div>
+
+  </div>
+</div>
+<script>
+  function openForm() {
+    document.getElementById("resumeForm").classList.remove("hidden");
+    document.getElementById("resumeForm").classList.add("flex");
+  }
+
+  function closeForm() {
+    document.getElementById("resumeForm").classList.add("hidden");
+  }
+
+  function downloadResume() {
+    const name = document.getElementById("visitorName").value;
+    const email = document.getElementById("visitorEmail").value;
+
+    if (name === "" || email === "") {
+      alert("Please enter your name and email.");
+      return;
+    }
+
+    console.log("Visitor:", name, email);
+
+    closeForm();
+
+    // Download file
+    window.location.href = "assets/resume.pdf";
+  }
+</script>
+<button
+  onclick="window.scrollTo({top:0,behavior:'smooth'})"
+  class="fixed bottom-6 right-6 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg"
+>
+  ↑
+</button>
+
+</body>
+</html>
